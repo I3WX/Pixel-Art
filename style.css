@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black ;
+    height: 450px;
+    width: 450px;
+}
+#button{
+    height: 85px;
+    width: 450px;
+    border: 5px solid black ;
+}
+#box{
+    display: flex;
+    justify-content: center;
+}
+#gridBox{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black ;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.pixel{
+    border: 1px solid rgba(0,0,0,1);
+}
