@@ -1,42 +1,57 @@
-*{
+/* Resetting default margin and padding to 0 and including border-box for better box sizing */
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-html,body{
+
+/* Setting height and width of html and body to 100% */
+html,body {
     height: 100%;
     width: 100%;
 }
-body{
+
+/* Centering the content vertically and horizontally using flexbox */
+body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#container{
+
+/* Styling for the container holding the buttons and grid */
+#container {
     display: flex;
     flex-direction: column;
-    border: 5px solid black ;
+    border: 5px solid black;
     height: 450px;
     width: 450px;
 }
-#button{
-    height: 85px;
+
+/* Styling for the button container */
+#button {
+    height: 100px;
     width: 450px;
-    border: 5px solid black ;
+    border: 5px solid black;
 }
-#box{
+
+/* Styling for the grid container */
+#box {
     display: flex;
     justify-content: center;
 }
-#gridBox{
+
+/* Styling for the grid itself */
+#gridBox {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black ;
+    border: 1px solid black;
     height: 350px;
     width: 350px;
     position: relative;
     overflow: hidden;
 }
-.pixel{
+
+/* Uncommenting the following code would add border to each pixel */
+/* .pixel {
     border: 1px solid rgba(0,0,0,1);
-}
+} */

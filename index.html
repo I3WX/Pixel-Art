@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Container for the grid and buttons -->
     <div id="container">
-        <div id="button"></div>
+        <!-- Buttons to create different grid sizes -->
+        <div id="button">
+            <button id="btn32" onclick="createGrid(32)" >32x32 Grid</button>
+            <button id="btn64" onclick="createGrid(64)" >64x64 Grid</button>
+        </div>
+        <!-- Box to contain the grid -->
         <div id="box">
             <div id ="gridBox"></div>
         </div>
     </div>
+    <!-- Script file -->
     <script src="script.js"></script>
 </body>
 </html>
