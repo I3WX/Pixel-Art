@@ -11,9 +11,33 @@
     <div id="container">
         <!-- Buttons to create different grid sizes -->
         <div id="button">
-            <button id="btn32" onclick="createGrid(32)">32x32 Grid</button>
-            <button id="btn64" onclick="createGrid(64)">64x64 Grid</button>
-            <button id="clear" onclick="clearGrid()">Clear</button>
+            <div id="grid">
+                <button id="btn32" onclick="createGrid(32)">32x32 Grid</button>
+                <button id="btn64" onclick="createGrid(64)">64x64 Grid</button>
+                <button id="btn128" onclick="createGrid(128)">128x128 Grid</button>
+            </div>
+            <div id="color">
+                <div>
+                    <button id="clear" >Clear</button>
+                    <button id="erase" >Erase</button>
+                    <button id="randomColor" >Random </button>
+                    <button id="blackColor" >Black </button>
+                </div>
+                <div>
+                    <div id="red">
+                        <input type="range" min="0" max="255" value="255" class="range" id="redSlider">
+                        <div id="redValue"></div>
+                    </div>
+                    <div id="green">
+                        <input type="range" min="0" max="255" value="255" id="greenSlider">
+                        <div id="greenValue"></div>
+                    </div>
+                    <div id="blue">
+                        <input type="range" min="0" max="255" value="255" id="blueSlider">
+                        <div id="blueVlaue"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Box to contain the grid -->
         <div id="box">
