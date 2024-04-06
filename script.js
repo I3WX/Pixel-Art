@@ -1,20 +1,13 @@
 const gridBox = document.getElementById("gridBox");
 
-// Commented out unused variables
-const btn32 = document.getElementById("btn32")
-const btn64 = document.getElementById("btn64")
-
 let totalBoxes = 0;
 
 function createGrid(pix) {
-    console.log(`create grid${pix}x${pix}`)
-    console.log(`create grid ${pix}*${pix}`);
     gridBox.innerHTML = "";
     totalBoxes = pix * pix;
     const boxWidth = 100 / pix + "%"; 
     const boxHeight = 100 / pix + "%"; 
     
-    // Creating grid boxes dynamically
     for (let i = 0; i < totalBoxes; i++) {
         const box = document.createElement("div");
         box.className = "pixel";
@@ -37,10 +30,7 @@ function createGrid(pix) {
     }
 }
 
-
-btn32.addEventListener("click", function(){
-    createGrid(32);
-});
-btn64.addEventListener("click", function(){
-    createGrid(64);
-});
+function clearGrid() {
+    console.log("Clear");
+    gridBox.innerHTML = "";
+}
