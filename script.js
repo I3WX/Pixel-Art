@@ -67,7 +67,7 @@ function modifyPixel() {
         
         // Event listener for clear button
         btnClear.addEventListener("click", function() {
-            pixel.style.backgroundColor = "";
+            pixel.style.backgroundColor = "#fff";
         });
         
         // Event listener for erase button
