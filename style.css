@@ -22,7 +22,7 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
+    border: 5px solid #2c3e50; 
     height: 750px;
     width: 750px;
 }
@@ -31,8 +31,9 @@ body {
 #button {
     height: 100px;
     width: 750px;
-    border: 5px solid black;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Styling for the grid container */
@@ -45,15 +46,25 @@ body {
 #gridBox {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border: 1px solid #2c3e50; 
     height: 650px;
     width: 650px;
     position: relative;
     overflow: hidden;
 }
+
 #color{
     display: flex;
+    justify-content: space-around;
+    width: 60%;
 }
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
 #red{
     display: flex;
 }
@@ -64,7 +75,7 @@ body {
     display: flex;
 }
 #colorBox{
-    border: 1px solid #000;
+    border: 1px solid #2c3e50; 
     height: 20px;
     width: 20px;
 }
