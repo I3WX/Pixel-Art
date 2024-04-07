@@ -16,6 +16,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: linear-gradient(to bottom, #bed6e5, #3ca1e4); */
+    background-image: linear-gradient(45deg, #3498db 25%, transparent 25%, transparent 75%, #3498db 75%, #3498db),
+                    linear-gradient(-45deg, #3498db 25%, transparent 25%, transparent 75%, #3498db 75%, #3498db);
+    background-size: 20px 20px;
+    background-color: #ecf0f1;
 }
 
 /* Styling for the container holding the buttons and grid */
@@ -25,6 +30,7 @@ body {
     border: 5px solid #2c3e50; 
     height: 750px;
     width: 750px;
+    background: linear-gradient(to bottom, #d8edfb,#bed6e5); 
 }
 
 /* Styling for the button container */
@@ -53,6 +59,7 @@ body {
     overflow: hidden;
 }
 
+/* Styling for the color picker and buttons */
 #color{
     display: flex;
     justify-content: space-around;
@@ -65,6 +72,7 @@ body {
     width: 80%;
 }
 
+/* Styling for the individual color sliders */
 #red{
     display: flex;
 }
@@ -74,6 +82,8 @@ body {
 #blue{
     display: flex;
 }
+
+/* Styling for the preview box of selected color */
 #colorBox{
     border: 1px solid #2c3e50; 
     height: 20px;
