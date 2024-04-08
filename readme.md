@@ -29,7 +29,7 @@ This project is a browser-based Etch-a-Sketch application. Users can draw on the
 
 ## Contributors
 
-- [Your Name]
+- Utkarsh Sharma
 
 ## License
 
